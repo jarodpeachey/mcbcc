@@ -14,7 +14,7 @@
     table.innerHTML = "";
 
     data.forEach((player, index) => {
-      if (index < 100) {
+      if (index < 100 && player && player !== null) {
         let item = document.createElement("tr");
         item.classList.add("item");
         item.innerHTML = `<td>${index + 1}</td><td>${player.userName}</td><td>${player.value}</td>`;
