@@ -11,6 +11,8 @@
 
     console.log(data);
 
+    table.innerHTML = "";
+
     data.forEach((player, index) => {
       if (index < 100) {
         let item = document.createElement("tr");
@@ -26,8 +28,15 @@
     loading.classList.remove("active");
   };
 
-  fetch("https://mcbcc.minecraftr.us:8079/api/scores/bedwarsstats/all")
-    .then(res => res.json())
-    .then(data => populateLeaderboard(data))
-    .catch(err => console.log(err));
+  async function fetchData() {
+    while (true) {
+      await new Promise(resolve => setTimeout(resolve, 10000));
+
+      const response = await fetch("https://mcbcc.minecraftr.us:8079/api/scores/bedwarsstats/all");
+      const data = await response.json();
+      populateLeaderboard(data);
+    }
+  }
+
+  fetchData();
 })();
