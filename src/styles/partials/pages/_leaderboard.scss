@@ -97,15 +97,7 @@
         }
       }
 
-      table {
-        display: none;
-        border-spacing: 6px;
-        width: 100%;
-
-        &.active {
-          display: table;
-        }
-
+      .table {
         tr {
           width: 100%;
 
@@ -124,7 +116,6 @@
               background: silver !important;
             }
           }
-          
 
           &:nth-of-type(3) {
             td {
@@ -135,6 +126,20 @@
               border-right: 1px solid rgb(73, 42, 28) !important;
             }
           }
+        }
+      }
+
+      table {
+        display: none;
+        border-spacing: 6px;
+        width: 100%;
+
+        &.active {
+          display: table;
+        }
+
+        tr {
+          width: 100%;
         }
 
         thead td {
