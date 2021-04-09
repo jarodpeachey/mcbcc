@@ -17,8 +17,8 @@ const Home = ({ props }) => {
             <h1>
               <img src="/media/img/logo.png" alt="" />
             </h1>
-            <a class="button">
-              <span>GO TO LEADERBOARDS</span>
+            <a href="/leaderboard" class="button">
+              <span>GO TO LEADERBOARD</span>
             </a>
           </div>
 
