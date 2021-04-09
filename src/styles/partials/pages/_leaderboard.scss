@@ -111,28 +111,28 @@
 
           &:first-of-type {
             td {
-              background: gold;
-              border-bottom: 1px solid rgb(95, 82, 5);
-              border-top: 1px solid rgb(179, 155, 19);
-              border-left: 1px solid rgb(230, 209, 93);
-              border-right: 1px solid rgb(94, 82, 16);
+              background: gold !important;
+              border-bottom: 1px solid rgb(95, 82, 5) !important;
+              border-top: 1px solid rgb(179, 155, 19) !important;
+              border-left: 1px solid rgb(230, 209, 93) !important;
+              border-right: 1px solid rgb(94, 82, 16) !important;
             }
           }
 
           &:nth-of-type(2) {
             td {
-              background: silver;
+              background: silver !important;
             }
           }
           
 
           &:nth-of-type(3) {
             td {
-              background: rgb(119, 61, 27);
-              border-bottom: 1px solid rgb(87, 45, 28);
-              border-top: 1px solid rgb(167, 87, 56);
-              border-left: 1px solid rgb(194, 119, 90);
-              border-right: 1px solid rgb(73, 42, 28);
+              background: rgb(119, 61, 27) !important;
+              border-bottom: 1px solid rgb(87, 45, 28) !important;
+              border-top: 1px solid rgb(167, 87, 56) !important;
+              border-left: 1px solid rgb(194, 119, 90) !important;
+              border-right: 1px solid rgb(73, 42, 28) !important;
             }
           }
         }
