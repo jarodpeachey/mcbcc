@@ -32,7 +32,7 @@
     while (true) {
       await new Promise(resolve => setTimeout(resolve, 10000));
 
-      const response = await fetch("https://mcbcc.minecraftr.us:8079/api/scores/bedwarsstats/all");
+      const response = await fetch("https://mcbcc.minecraftr.us/api/scores/bedwarsstats/all");
       const data = await response.json();
       populateLeaderboard(data);
     }
