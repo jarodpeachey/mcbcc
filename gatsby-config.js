@@ -1,22 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Custom website design & development`,
-    description: `Get the perfect custom website for your business. We specialize in custom website design, SEO, accessibility and copywriting. Our websites are crafted to be beautiful, easy-to-use and optimized for increasing your business's revenue.`,
+    title: `MCBCC Bedwars Tournament`,
+    description: ``,
     author: `@jarodpeachey`,
-    siteUrl: "https://jellydevelopment.com",
+    siteUrl: "https://mcbcc.netlify.app",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: "gatsby-source-cosmicjs",
-      options: {
-        bucketSlug: "jelly-development", // Bucket Slug
-        objectTypes: ["posts"], // List of the Object Types you want to be able to request from Gatsby.
-        apiAccess: {
-          read_key: "vA17oFFhuUlFosf6AJhSjW0J9u3cyA63XgYEe7NzSYEJr5vpn9",
-        },
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

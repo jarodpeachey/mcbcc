@@ -1,36 +1,39 @@
-// @use "breakpoints" as *;
-@use "colors" as *;
-@use "shadows" as *;
-// @use "utilities" as *;
-
-.btn {
-  background: $color--primary;
-  color: white;
-  padding: 16px 24px 15px 24px;
-  font-size: 15px;
-  text-decoration: none;
-  border-radius: 3px;
-  border: 1px solid $color--primary;
-  display: block;
+.button {
+  height: 60px;
+  width: 400px;
+  outline: 2px solid black;
+  position: relative;
+  margin: 0;
+  font-weight: bold;
+  display: inline-block;
+  background-image: url('/media/img/button.png');
+  background-repeat: repeat;
+  padding: 0;
+  font-family: "Minecraft";
   text-align: center;
-  width: fit-content;
-  font-weight: 500;
-  // font-family: "Nunito Sans";
-  transition: background 0.3s, box-shadow .3s;
-  text-transform: uppercase;
-  box-shadow: 1px 2px 4px -1px #1b1a2710, 3px 5px 8px -2px #1b1a2710;
+  color: white;
+  text-shadow: 3px 3px #4C4C4C;
+  border-bottom: 4px solid #565656;
+  border-right: 2px solid #565656;
+  border-left: 2px solid #AAA;
+  border-top: 2px solid #AAA;
+  box-sizing: border-box;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 48px;
+  padding-top: 7px;
+}
 
-  &:hover {
-    box-shadow: 1px 2px 4px -1px #1b1a2720, 3px 5px 8px -2px #1b1a2720, 1px 1px 26px -6px #1b1a2720;
-  }
+.button span {
+  position: relative;
+  line-height: 40px;
+  bottom: 3px;
+}
 
-  &.outlined {
-    background: transparent;
-    color: $color--primary;
-    box-shadow: none;
-
-    &:hover {
-      box-shadow: 1px 2px 4px -1px #1b1a2710, 3px 5px 8px -2px #1b1a2710;
-    }
-  }
+.button:hover {
+  color: #e2e284;
+  filter: brightness(120%);
 }
