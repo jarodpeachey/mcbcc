@@ -26,7 +26,7 @@
     loading.classList.remove("active");
   };
 
-  fetch("http://mcbcc.minecraftr.us:8079/api/scores/bedwarsstats/all")
+  fetch("mcbcc.minecraftr.us:8079/api/scores/bedwarsstats/all")
     .then(res => res.json())
     .then(data => populateLeaderboard(data))
     .catch(err => console.log(err));
